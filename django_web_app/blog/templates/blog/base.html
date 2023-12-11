@@ -38,7 +38,7 @@
                   <form id="searchform" action="{% url 'search' %}" method="get">
                     <input type="text" name="q" type="text" value="{{ request.GET.q }}" placeholder="Search Here..." />
                     <button type="button" onclick="searchform.submit()" class=" text-white my-color btn-primary"><i class="fa fa-search"></i></button>
-                </form>
+                  </form>
               
                     {% if user.is_authenticated %}
                     <a href="{% url 'user-posts' user %}" class="btn text-white m-2"><i class="fas fa-user-shield"></i> My Post</a>
